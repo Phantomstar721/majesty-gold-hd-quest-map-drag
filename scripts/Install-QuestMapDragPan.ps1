@@ -144,7 +144,7 @@ if (-not $stubAlreadyPatched -and -not $stubIsEmpty) {
     throw ("The click-drag code-cave range at file offset 0x{0:X} is not empty. Refusing to overwrite it." -f $CaveOffset)
 }
 
-Write-Host "Majesty Gold HD Click-Drag Quest Map Pan installer"
+Write-Host "Majesty Gold HD Quest Map Drag installer"
 Write-Host "Game path: $resolvedGamePath"
 Write-Host "This lets you hold the left mouse button on the quest map and drag to pan."
 if ($DryRun) {
@@ -175,4 +175,4 @@ for ($i = 0; $i -lt $StubBytes.Length; $i++) {
 [IO.File]::WriteAllBytes($exePath, $bytes)
 
 Write-Host "Done. Click-drag quest map panning is installed."
-Write-Host "Use Uninstall - Restore Click-Drag Quest Map Pan Only.bat to remove only click-drag panning."
+Write-Host "Use Uninstall - Restore Stock Quest Map.bat to remove click-drag panning."
