@@ -120,7 +120,7 @@ $hookIsPatched = Test-BytesEqual $bytes $HookOffset $HookBytes
 $hookIsStock = Test-BytesEqual $bytes $HookOffset $OriginalHookBytes
 $stubIsPatched = Test-BytesEqual $bytes $CaveOffset $StubBytes
 
-Write-Host "Majesty Gold HD Click-Drag Quest Map Pan restore"
+Write-Host "Majesty Gold HD Quest Map Drag restore"
 Write-Host "Game path: $resolvedGamePath"
 if ($DryRun) {
     Write-Host "Dry run: no files will be changed."
